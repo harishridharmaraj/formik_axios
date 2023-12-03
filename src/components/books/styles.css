@@ -1,0 +1,146 @@
+ul {
+  list-style: none;
+}
+.navbar {
+  background-color: rgb(0, 166, 255);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.logout {
+  border: none;
+  background-color: rgb(0, 166, 255);
+  font-size: medium;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.logoSec {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+.sidebar {
+  background-color: rgb(0, 166, 255);
+  width: 200px;
+  height: 100vh;
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+}
+.sidebar > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.toggle {
+  border: none;
+  background-color: inherit;
+  background-color: rgb(0, 134, 207);
+}
+.sidebar > ul > li {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgb(0, 134, 207);
+  border-radius: 10px;
+  font-size: large;
+}
+.sidesandcenter {
+  display: flex;
+  gap: 30px;
+}
+.adduserbtn {
+  float: right;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  background-color: #000;
+  border-radius: 10px;
+}
+.addusersec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+.addusersec:first-child {
+  font-size: 25px;
+}
+.atnbtn {
+  display: flex;
+  gap: 10px;
+}
+.atnbtn > button {
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  padding: 2px;
+}
+.addform {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.addform > div > input {
+  flex-wrap: wrap;
+  display: flex;
+  width: 200px;
+  height: 25px;
+  border: transparent;
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+.addform > div {
+  display: flex;
+  gap: 10px;
+}
+.addform > div > label {
+  width: 100px;
+}
+.addform > button {
+  border: none;
+  width: 200px;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+  .usercontainer {
+    width: 60%;
+  }
+  .navbar {
+    width: 150%;
+  }
+
+  .addform {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-left: 30px;
+  }
+  .addform > div {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1100px) {
+  .usercontainer {
+    margin-left: 10px;
+    width: 50%;
+  }
+  .navbar {
+    width: 100%;
+  }
+}
